@@ -1,0 +1,177 @@
+/* style the background of our page */
+
+/* The radial-gradient() is an in-built CSS function which generates the smooth 
+transitions between two or more than two colors. 
+It sets the radial gradient as the background image. 
+It can be a circular or elliptical shape.  */
+
+html{
+	height:100%;
+	background: radial-gradient(circle,#fff,#ccc);
+}
+
+/* style for the container */
+
+/* The box-shadow CSS property adds shadow effects around an element's frame.
+You can set multiple effects separated by commas. 
+A box shadow is described by X and Y offsets relative to the element,
+blur and spread radius, and color. */
+
+#container{
+	height:450px;
+	width:550px;
+	background-color:#00FFFF;
+	margin:100px auto;
+	padding:20px;
+	border-radius:10px;
+	box-shadow: 0px 4px 0px 0px black;
+/* box-shadow:[horizontal-offset] [vertical-offset] [blur radius] [optional spread radius] [color] */
+    position:relative; /* places an element relative to its current position without changing the layout around it */
+}
+
+/* styling for score box */
+#score{
+	background-color:greenyellow;
+	color:black;
+	padding:10px;
+	position:absolute; /* places an element relative to its parent's position and changing the layout around it */
+	left:500px;
+	box-shadow:0px 4px 0px #9da853; 
+}
+
+/* styling for correct box */
+
+#correct{
+	position:absolute;
+	left:260px;
+	background-color:#42e252;
+	color:white;  /* text color */
+	padding:12px;	
+	display:none;  /* hidden */
+}
+
+/* styling for wrong box */
+
+#wrong{
+	position:absolute;
+	left:250px;
+	background-color:#de401a;
+	color:white;  /* text color */
+	padding:12px;	
+	display:none;
+}
+
+/* styling for question */
+	
+#question{
+	width:450px;
+	height:150px;
+	margin:50px auto 10px auto;
+	background-color:mediumpurple;
+	box-shadow:0px 4px black;
+	font-size:100px;
+	text-align:center;
+	font-family:cursive;
+	color:black;
+}
+
+/* styling for instruction */
+
+#instruction{
+	width:450px;
+	height:50px;
+	background-color:mediumorchid;
+	margin:10px auto;
+	text-align:center;
+	line-height:50px; /* set the distance between lines of text. */
+	box-shadow:0px 4px black;
+}
+
+/* styling for choices */
+
+#choices{
+	width:450px;
+	height:100px;
+	margin:5px auto;
+}
+
+.box{
+	width:80px;
+	height:80px;
+	background-color:white;
+	float:left;
+	margin-right:32px;
+	border-radius:4px;	
+	cursor:pointer; /* specifies the mouse cursor to be displayed when pointing over an element.*/
+	box-shadow:0px 4px grey;
+	text-align:center;
+	line-height:75px;
+	position:relative;
+	transition: all 0.2s;
+	
+	
+}
+
+.box:active,#startreset:active{
+	box-shadow:0px 0px grey;
+}
+
+.box:hover,#startreset:hover{
+	background-color:violet;
+	color:white;
+	box-shadow:0px 4px grey;
+	top:4px;
+}
+	
+/* styling for start and reset button */
+
+#startreset{
+	width:90px;
+	height:auto;
+	background-color:white;
+	margin:0 auto;
+	padding:20px;
+	border-radius:4px;	
+	cursor:pointer; /* specifies the mouse cursor to be displayed when pointing over an element.*/
+	box-shadow:0px 4px grey;
+	text-align:center;
+	line-height:20px;
+	position:relative;
+	transition: all 0.2s;
+}
+
+/* styling for time remaining */
+
+#timeremaining{
+	width:170px;
+	padding:10px;
+	position:absolute;
+	top:410px;
+	left:380px;
+	background-color:rgba(181,235,36,0.8);
+	border-radius:5px;
+	box-shadow:0px 4px grey;
+	/*visibility:hidden;  hide the element from the page but takes up space in the document */
+	display:none;
+}
+
+#gameover{
+	height:200px;
+	width:500px;
+	background:linear-gradient(#F3CA6B,#F3706C);
+	color:white;
+	font-size:2.5em;
+	text-align:center;
+	text-transform:uppercase;
+	position:absolute;
+	top:100px;
+	left:45px;
+	z-index:2;
+	display:none;
+}
+	
+	
+
+	
+
+	
